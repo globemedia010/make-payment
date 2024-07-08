@@ -1,1 +1,74 @@
+body {
+  background: #fff;
+  font-family: Arial;
+  display: flex;
+  flex-direction: column;
+}
 
+/* CONTENT DIV */
+body > .content {
+  margin: 50px auto auto auto;
+}
+
+.width-longer body > .content {
+  width: 60%;
+}
+
+.height-longer body > .content {
+  width: 90%;
+}
+
+
+/* CONTENT - SECTION CONTAINER */
+body > .content .section-container {
+  width: -webkit-fill-available;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* SECTION CONTAINER - h2 TITLE */
+.content > .section-container h2 {
+  text-align: center;
+}
+
+.content > .section-container .banking-info {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+}
+
+.content > .section-container .banking-info p {
+  width: inherit;
+  height: fit-content;
+  display: inline-flex;
+  margin: 10px auto;
+}
+
+.content > .section-container span {
+  width: fit-content;
+  height: fit-content;
+}
+
+.width-longer .content > .section-container span {
+  font-size: 18px;
+}
+
+.height-longer .content > .section-container span {
+  font-size: 14px;
+}
+
+.content > .donate.section-container .banking-info p span.title {
+  margin: auto auto auto 0px;
+  font-weight: bold;
+}
+
+.content > .donate.section-container .banking-info p span.input {
+  margin: auto 0px auto auto;
+}
+
+.content > .invest.section-container span {
+  margin: auto;
+}
